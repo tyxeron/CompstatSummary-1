@@ -8,7 +8,7 @@ datanew <-data[complete.cases(data),]
 lo <- loess(y ~ x, span=0.3)}
 predict(object=lo, x) # prediction
 \end{lstlisting}
-\textbf{Set plot arrangement:}
+\textbf{Plots:}
 \begin{lstlisting}[language = R]
 par(mfrow = c(2, 2))
 plot(fit, which = 1) #turkey ascombe, should be evenly distributed (same amount positive and negative->otherwise not normally distributed, straight lane ->otherwise expected value depends on x, if eg. beginning all dots close to line and end not, it's non constant variance)
